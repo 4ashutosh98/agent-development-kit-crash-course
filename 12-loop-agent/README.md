@@ -72,7 +72,7 @@ adk web
 ```
 
 Then in the web interface, enter a prompt like:
-"Generate a LinkedIn post about what I've learned from @aiwithbrandon's Agent Development Kit tutorial."
+"Generate a LinkedIn post about what I've learned from @aiwithashutosh's Agent Development Kit tutorial."
 
 The system will:
 1. Generate an initial LinkedIn post
@@ -85,7 +85,7 @@ The system will:
 ## Example Input
 
 ```
-Generate a LinkedIn post about what I've learned from @aiwithbrandon's Agent Development Kit tutorial.
+Generate a LinkedIn post about what I've learned from @aiwithashutosh's Agent Development Kit tutorial.
 ```
 
 ## Loop Termination

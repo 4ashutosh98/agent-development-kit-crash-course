@@ -46,7 +46,7 @@ This structure ensures that ADK can automatically discover and load your agent w
 - **description** (Optional, but recommended): A concise summary of the agent's capabilities. Used for other agents to determine if they should route a task to this agent.
 
 ### 2. Model (`model`)
-- Specifies which LLM powers the agent (e.g., "gemini-2.0-flash")
+- Specifies which LLM powers the agent (e.g., "gemini-2.5-flash-lite")
 - Affects the agent's capabilities, cost, and performance
 
 ### 3. Instructions (`instruction`)

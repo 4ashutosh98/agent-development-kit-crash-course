@@ -111,7 +111,7 @@ def after_tool_callback(
 # Create the Agent
 root_agent = LlmAgent(
     name="tool_callback_agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="An agent that demonstrates tool callbacks by looking up capital cities",
     instruction="""
     You are a helpful geography assistant.

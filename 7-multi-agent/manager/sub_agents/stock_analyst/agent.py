@@ -39,7 +39,7 @@ def get_stock_price(ticker: str) -> dict:
 # Create the root agent
 stock_analyst = Agent(
     name="stock_analyst",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="An agent that can look up stock prices and track them over time.",
     instruction="""
     You are a helpful stock market assistant that helps users track their stocks of interest.
@@ -54,6 +54,9 @@ stock_analyst = Agent(
     - GOOG: $175.34 (updated at 2024-04-21 16:30:00)
     - TSLA: $156.78 (updated at 2024-04-21 16:30:00)
     - META: $123.45 (updated at 2024-04-21 16:30:00)"
+    
+    If the task is not related to stock prices, you should delegate the task to the manager agent.
+ 
     """,
     tools=[get_stock_price],
 )

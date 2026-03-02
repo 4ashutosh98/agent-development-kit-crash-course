@@ -71,7 +71,7 @@ def refund_course(tool_context: ToolContext) -> dict:
 # Create the order agent
 order_agent = Agent(
     name="order_agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Order agent for viewing purchase history and processing refunds",
     instruction="""
     You are the order agent for the AI Developer Accelerator community.
@@ -129,6 +129,8 @@ order_agent = Agent(
     - Mention our 30-day money-back guarantee if relevant
     - Direct course questions to course support
     - Direct purchase inquiries to sales
+
+    If the user asks about anything apart from purchase history or refunds, direct them to the main customer service agent.
     """,
     tools=[refund_course, get_current_time],
 )

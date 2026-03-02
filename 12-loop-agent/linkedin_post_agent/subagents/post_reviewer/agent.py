@@ -9,7 +9,7 @@ from google.adk.agents.llm_agent import LlmAgent
 from .tools import count_characters, exit_loop
 
 # Constants
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.5-flash-lite"
 
 # Define the Post Reviewer Agent
 post_reviewer = LlmAgent(
@@ -28,7 +28,7 @@ post_reviewer = LlmAgent(
     
     3. If length check passes, evaluate the post against these criteria:
        - REQUIRED ELEMENTS:
-         1. Mentions @aiwithbrandon
+         1. Mentions @aiwithashutosh
          2. Lists multiple ADK capabilities (at least 4)
          3. Has a clear call-to-action
          4. Includes practical applications

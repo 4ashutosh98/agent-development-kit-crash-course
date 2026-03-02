@@ -43,7 +43,7 @@ For example, this approach using two built-in tools within a single agent is **n
 ```python
 root_agent = Agent(
     name="RootAgent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Root Agent",
     tools=[built_in_code_execution, google_search],  # NOT SUPPORTED
 )
@@ -64,7 +64,7 @@ def get_current_time() -> dict:
 
 root_agent = Agent(
     name="RootAgent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Root Agent",
     tools=[google_search, get_current_time],  # NOT SUPPORTED
 )

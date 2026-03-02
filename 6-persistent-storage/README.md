@@ -18,7 +18,7 @@ This example shows how to implement a reminder agent that remembers your name an
 ## Project Structure
 
 ```
-5-persistent-storage/
+6-persistent-storage/
 │
 ├── memory_agent/               # Agent package
 │   ├── __init__.py             # Required for ADK to discover the agent

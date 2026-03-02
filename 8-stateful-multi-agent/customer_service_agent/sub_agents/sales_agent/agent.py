@@ -58,7 +58,7 @@ def purchase_course(tool_context: ToolContext) -> dict:
 # Create the sales agent
 sales_agent = Agent(
     name="sales_agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Sales agent for the AI Marketing Platform course",
     instruction="""
     You are a sales agent for the AI Developer Accelerator community, specifically handling sales
@@ -107,6 +107,8 @@ sales_agent = Agent(
     - Be helpful but not pushy
     - Focus on the value and practical skills they'll gain
     - Emphasize the hands-on nature of building a real AI application
+
+    If the user asks about anything apart from purchasing the course, direct them to the main customer service agent.
     """,
     tools=[purchase_course],
 )
